@@ -1,0 +1,123 @@
+* {
+    margin: 0
+    }
+    img {
+        object-fit: cover;
+    }
+    body {
+        position: relative; top: 3em}
+    
+    header {
+        background-color: rgb(255, 255, 255);
+        color: white;
+        width: 100%;
+        padding: 1%;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        box-shadow: 0 0.1em 0.5em
+    }
+    
+    #lista-header{
+        display: inline;
+        text-align: left;
+        margin: 0 0 0;
+    }
+    ul#lista-header li{
+        display: inline;
+        margin: 5px;
+        border-radius: 1%;
+        padding: 10px;
+    }
+    ul#lista-header a{
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        padding: 10px;
+        border-width: 0 0 0 0;
+    }
+    ul#lista-header li :hover{
+        background-color: rgb(199, 199, 199);
+        transition: 0.5s linear;
+        border-radius: 5px;
+    }
+    /*pie*/
+    
+    
+    footer {
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+        width: 98%;
+        position: relative;
+        padding: 1%;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 2em;
+        box-shadow: 0 0.1em 0.5em;
+        height: 2.5em;
+    }
+    #lista-footer{
+        display: inline;
+        text-align: left;
+        margin: 0 0 0;
+    }
+    ul#lista-footer li{
+        display: inline;
+        margin: 5px;
+        border-radius: 1%;
+        padding: 10px;
+    }
+    ul#lista-footer a{
+        text-decoration: none;
+    
+        padding: 10px;
+        border-width: 0 0 0 0;
+    }
+    ul#lista-footer p{
+        display: inline;
+        font-size: 0.7em;
+    }
+    
+/* cuerpo */
+
+
+.texto1{
+    font-family: 'Staatliches', cursive;
+
+}
+
+h1{
+    text-align: center;
+    font-size: 3em;
+    padding: 1.0em;
+    
+}
+.texto1 p{
+    font-size: 1.5em;
+    padding: 1.0em;
+    margin-left: 10%;
+    margin-right: 10%;
+    justify-content: center;
+    line-height: 1.5em;
+}
+.video{
+    display: flex;
+    justify-content: center;
+    
+}
+.video iframe{
+    border: 2px black solid;
+}
+.texto2{
+    text-align: center;
+    font-family: 'Staatliches', cursive;
+    font-size: 1.5em;
+    padding: 1.0em;
+    margin-left: 10%;
+    margin-right: 10%;
+    justify-content: center;
+    line-height: 1.5em;
+}
+.mapa {
+    display: flex;
+    justify-content: center;
+}

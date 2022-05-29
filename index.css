@@ -1,0 +1,246 @@
+* {
+margin: 0
+}
+img {
+    object-fit: cover;
+}
+body {
+    position: relative; top: 3em}
+
+header {
+    background-color: rgb(255, 255, 255);
+    color: white;
+    width: 100%;
+    padding: 1%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    box-shadow: 0 0.1em 0.5em
+}
+
+#lista-header{
+    display: inline;
+    text-align: left;
+    margin: 0 0 0;
+}
+ul#lista-header li{
+    display: inline;
+    margin: 5px;
+    border-radius: 1%;
+    padding: 10px;
+}
+ul#lista-header a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    border-width: 0 0 0 0;
+}
+ul#lista-header li :hover{
+    background-color: rgb(199, 199, 199);
+    transition: 0.5s linear;
+    border-radius: 5px;
+}
+/*pie*/
+
+
+footer {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    width: 98%;
+    position: relative;
+    padding: 1%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2em;
+    box-shadow: 0 0.1em 0.5em;
+    height: 2.5em;
+}
+#lista-footer{
+    display: inline;
+    text-align: left;
+    margin: 0 0 0;
+}
+ul#lista-footer li{
+    display: inline;
+    margin: 5px;
+    border-radius: 1%;
+    padding: 10px;
+}
+ul#lista-footer a{
+    text-decoration: none;
+
+    padding: 10px;
+    border-width: 0 0 0 0;
+}
+ul#lista-footer p{
+    display: inline;
+    font-size: 0.7em;
+}
+
+
+
+/* cuerpo */
+.contenedor1{
+    display: grid;
+    ;
+    grid-template-columns: 100% ;
+    grid-template-rows: 25em 22em  ;
+    display: grid;
+    grid-gap: 1em;
+    padding-top: 2%;
+}
+
+.encuadre1{
+    background-color: brown;
+    margin-bottom: 1%;
+    box-shadow: 0 0.1em 0.5em;
+}
+.encuadre2{
+    background-color: rgb(255, 255, 255);
+}
+.encuadre2 h1{
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 1px;
+    margin-top: 0.5em;
+    font-size: 5em;
+    text-align: center;
+}
+.encuadre2 p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 1px;
+    margin-top: 0.5em;
+    font-size: 2em;
+    text-align: center;
+}
+
+.contenedor2{
+    display: grid;
+    margin: 0%;
+    grid-template-columns: 32.5% 32.5% 32.5%;
+    grid-template-rows: 15em 15em  ;
+    display: grid;
+    grid-gap: 10px;
+    padding: 2%;
+    background-color: rgb(255, 255, 255);
+}
+
+.enlace1{
+    background-color: rgb(0, 136, 255);
+    grid-column-start: 1;
+    ;
+}
+.enlace2{
+    background-color: blueviolet;
+}
+.enlace3{
+    background-color: darkgreen;
+}
+.encuadre3{
+background-color: aqua;
+grid-column-start: 1;
+grid-column-end: 4;
+}
+.encuadre1 img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.enlace1 img{
+    width: 100% ;
+    height: 100%;
+}
+.enlace2 img{
+    width: 100% ;
+    height: 100%;
+}
+.enlace3 img{
+    width: 100% ;
+    height: 100%;
+    
+}
+.descripcion1 {
+    text-align: center;
+    margin: 8%;
+    font-family: 'Staatliches', cursive;
+    font-size: 2.5em;
+    animation-duration: 3s
+}
+.descripcion2{
+    text-align: center;
+    margin: 8%;
+    font-family: 'Staatliches', cursive;
+    font-size: 2.5em;
+}
+.descripcion3 {
+    text-align: center;
+    margin: 8%;
+    font-family: 'Staatliches', cursive;
+    font-size: 2.5em;
+}
+.descripcion1 a{
+text-decoration: none;
+color: chocolate;
+animation-name: zoom;
+animation-duration: 3s;
+
+}
+.descripcion2 a{
+    text-decoration: none;
+    color: lightskyblue;
+    
+}
+.descripcion3 a{
+    text-decoration: none;
+    color: purple;
+    
+}
+div#desc1 a:hover{
+    background-color: rgb(160, 160, 160);
+    transition: 0.5s ;
+    border-radius: 3%;
+    padding: 8%;
+}
+div#desc2 a:hover{
+    background-color: rgb(160, 160, 160);
+    transition: 0.5s ;
+    border-radius: 3%;
+    padding: 8%;
+}
+div#desc3 a:hover{
+    background-color: rgb(160, 160, 160);
+    transition: 0.5s ;
+    border-radius: 3%;
+    padding: 8%;
+}
+@keyframes zoom {
+from{
+    width: 5%;
+    height: 5%;
+
+}
+to{
+    width: auto;
+    height: auto;
+}
+}
+@media screen and (max-width:768px) {
+    [class="contenedor2"]{
+grid-template-columns: 100%;
+         
+}
+[class="encuadre2"]{
+    font-size: 0.7em;
+}
+}
+@media screen and (max-width:320px){
+    [class="contenedor2"]{
+        grid-template-columns: 100%;
+                 
+        }
+        [class="encuadre2"]{
+            font-size: 0.5em;
+        }
+    
+}
